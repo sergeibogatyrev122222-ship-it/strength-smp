@@ -102,7 +102,7 @@ public class StrengthManager {
      * We always remove then re-add so there is never stacking or duplication.
      */
     public void applyAttributeModifier(Player player, int points) {
-        AttributeInstance attr = player.getAttribute(Attribute.ATTACK_DAMAGE);
+       AttributeInstance attr = player.getAttribute(Attribute.GENERIC_ATTACK_DAMAGE);
         if (attr == null) return;
 
         // Remove any existing modifier with our key
